@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+iframe {
+    top:10vh;
+    border: none;
+    width: 100%;
+    height: 90vh;
+}
+
+/* #pdf:after{
+    content: '';
+    position: fixed;
+    margin: 0;
+    width: 100vw;
+    height: 40vh;
+    background: rgb(255, 0, 0);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 30px 30px 0px 0px;
+    mix-blend-mode: darken;
+} */
+
+.box {
+    margin: 0;
+    width: 97vw;
+    height: 40vh;
+    background: #38b48b;
+    position: fixed;
+    bottom: 0px;
+    right: 2vw;
+    border-radius: 30px 30px 0px 0px;
+    mix-blend-mode: darken;
+}
+
+.sheet-hidden {
+    background-color: rgb(255, 255, 255);
+}
+
+#color-open {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    border: 0px solid;
+    bottom: 15px;
+    right: 5vw;
+}
+
+#setting-open {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    border: 0px solid;
+    bottom: 15px;
+    right: 5vw;
+}
+
+.color{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+}
+
+#none{
+    bottom: 15px;
+    right: 15vw;
+}
+
+#red{
+    bottom: 15px;
+    right: 22vw;
+}
+
+#blue{
+    bottom: 15px;
+    right: 29vw;
+}
+
+#green{
+    bottom: 15px;
+    right: 36vw;
+
+}
+
+#sheetUpDown{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0px solid;
+
+}
+
+#up{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 50px;
+    height: 30px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    border-radius: 3px;
+    background: white;
+    border: 0px solid;
+}
+
+#down{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 50px;
+    height: 30px;
+    clip-path: polygon(0 0%, 50% 100%, 100% 0%);
+    border-radius: 3px;
+    background: white;
+    border: 0px solid;
+}
+
+#updownok{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0px solid;
+
+}
+
+.per-line {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 10px dotted black;
+
+}
+
+.hidden {
+    display: none;
+}
