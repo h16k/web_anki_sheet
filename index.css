@@ -68,31 +68,28 @@ iframe {
     position: fixed;
     width: 30px;
     height: 30px;
+    bottom: 15px;
+
 }
 
 #none{
-    bottom: 15px;
     right: 15vw;
 }
 
 #red{
-    bottom: 15px;
     right: 22vw;
 }
 
 #blue{
-    bottom: 15px;
     right: 29vw;
 }
 
 #green{
-    bottom: 15px;
     right: 36vw;
 
 }
 
 #spoit{
-    bottom: 15px;
     right: 43vw;
 
 }
