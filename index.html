@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,32 @@
     <title>Document</title>
     <script src="index.js"></script>
 </head>
+
 <body>
-
-<iframe src="https://yomugaku.com" frameborder="0"></iframe>
-    <div class="box" id="anki-sheet">
-        <img src="icons/palette.svg" alt="palette" class = "setting" id = "color-open" onclick="toggleHidden('settings');">
-
-        <div id="settings" class = "hidden">
-            <img src="icons/none.svg" alt="none" id = "none" class = "color" onclick="toggleHidden('anki-sheet');toggleHidden('setting-open');">
-            <img src="icons/red.svg" alt="red" id = "red" class = "color" onclick="changeSheetColor('#e60033');">
-            <img src="icons/blue.svg" alt="blue" id = "blue" class = "color" onclick="changeSheetColor('#0095d9');">
-            <img src="icons/green.svg" alt="green" id = "green" class = "color" onclick="changeSheetColor('#38b48b');">
-        </div>
-        <img src="icons/updown.svg" id = "sheetUpDown" onclick = "toggleHidden('sheetUpDown');toggleHidden('up');toggleHidden('down');toggleHidden('updownok');"/>
-        <input type="button" value="" id = "up" class = "hidden" onclick = "sheetUp()"/>
-        <input type="button" value="" id = "down" class = "hidden" onclick = "sheetDown()"/>
-        <img src="icons/ok.svg" id = "updownok" class = "hidden" onclick = "toggleHidden('sheetUpDown');toggleHidden('up');toggleHidden('down');toggleHidden('updownok');"/>
+    <div id="material">
+        <input name="教材のパス（URL）" type="text" id="materialURI" placeholder="教材のパス（URL）" onkeypress="enter(event.key);">
+        <button onclick="createPuzzleProcess();">生成</button>
     </div>
-            <img src="icons/palette.svg" alt="setting-open" class = "setting hidden" id = "setting-open" onclick="toggleHidden('anki-sheet');toggleHidden('setting-open');">
+    <div class="box" id="anki-sheet">
+        <img src="icons/palette.svg" alt="palette" class="setting" id="color-open" onclick="toggleHidden('settings');">
+
+        <div id="settings" class="hidden">
+            <img src="icons/none.svg" alt="none" id="none" class="color"
+                onclick="toggleHidden('anki-sheet');toggleHidden('setting-open');">
+            <img src="icons/red.svg" alt="red" id="red" class="color" onclick="changeSheetColor('#e60033');">
+            <img src="icons/blue.svg" alt="blue" id="blue" class="color" onclick="changeSheetColor('#0095d9');">
+            <img src="icons/green.svg" alt="green" id="green" class="color" onclick="changeSheetColor('#38b48b');">
+        </div>
+        <img src="icons/updown.svg" id="sheetUpDown"
+            onclick="toggleHidden('sheetUpDown');toggleHidden('up');toggleHidden('down');toggleHidden('updownok');" />
+        <input type="button" value="" id="up" class="hidden" onclick="sheetUp()" />
+        <input type="button" value="" id="down" class="hidden" onclick="sheetDown()" />
+        <img src="icons/ok.svg" id="updownok" class="hidden"
+            onclick="toggleHidden('sheetUpDown');toggleHidden('up');toggleHidden('down');toggleHidden('updownok');" />
+    </div>
+    <img src="icons/palette.svg" alt="setting-open" class="setting hidden" id="setting-open"
+        onclick="toggleHidden('anki-sheet');toggleHidden('setting-open');">
 
 </body>
+
 </html>
