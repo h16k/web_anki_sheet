@@ -91,6 +91,12 @@ iframe {
 
 }
 
+#spoit{
+    bottom: 15px;
+    right: 43vw;
+
+}
+
 #sheetUpDown{
     position: absolute;
     top: 5px;
